@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/**/
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+}
+/*"O '.' é usado para CLASS*/
+/*"A '#' é usado para ID*/
+
+#personagem{
+    width: 20px; /*Largura*/
+    height: 50px; /*Altura*/
+    background-color: red;
+    position: relative;
+    top: 150px; /* Distância do Topo*/
+    
+}
+
+.animar{
+    animation: personagem 500ms infinite ;
+}
+
+@keyframes personagem {
+    0% {top: 150px;} /*Posição inicial (chão)*/
+    30%{top:100px;} /*Posição Final*/
+    70%{top:100px;} /*Posição Final*/
+    100%{top:150px;} /*Posição Final*/
+}
+
+#quadrado{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: quadrado 1s infinite linear;
+}
+
+@keyframes quadrado {
+    0% {left: 480px;} /*Posição inicial*/
+    100%{left:-40px;} /*Posição Final*/
+}
